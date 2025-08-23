@@ -1,0 +1,140 @@
+<!--Lesson 4 Exercises -->
+<!-- Chrome DevTools & CSS Box Model-->
+<!--Use CSS to recreate these buttons from famous websites:-->
+<style>
+  .uber-btn {
+    background-color: black;
+    color: white;
+    border-style: none;
+    padding: 12px 18px;
+    
+    transition: opacity 0.24s ease;
+  }
+  
+  .uber-btn:hover {
+    opacity: 0.7;
+  }
+  
+  .amazon-btn {
+    background-color: #FADD56;
+    border-style: none;
+    border-radius: 18px;
+    padding: 12px 42px;
+    
+    transition: background-color 0.24s ease;
+  }
+  
+  .amazon-btn:hover {
+    background-color: rgb(244, 204, 71);
+  }
+  
+  
+  .github-btn {
+    background-color: #65b56a;
+    border-style: none;
+    border-radius: 8px;
+    color: white;
+    padding: 12px 20px;
+    font-weight: bold;
+    transition: box-shadow 0.24s ease;
+  }
+  
+  .github-btn:hover {
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .bootstrap-get-started-btn {
+    padding: 12px 18px;
+    color: white;
+    background-color: #785AAD;
+    border-style: none;
+    border-radius: 4px;
+    font-weight: bold;
+    
+    transition: background-color 0.24s ease;
+  }
+  
+  .bootstrap-get-started-btn:hover {
+    background-color: #61498c;
+  }
+  
+  .bootstrap-dl-btn {
+    font-weight: bold;
+    background-color: white;
+    border: 1px solid rgb(108, 117, 122, .5);
+    border-radius: 4px;
+    padding: 12px 18px;
+    color: #73757A;
+    
+    transition: background-color 0.24s ease, color 0.24s ease;
+  }
+  
+  .bootstrap-dl-btn:hover {
+    color: white;
+    background-color: rgb(108, 117, 122);
+  }
+  
+  /* Googled how to do do multiple classes
+  * and use them in the "object oriented" CSS Style
+  */
+  .linkedln {
+    font-weight: bold;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    border-radius: 22px;
+  }
+  
+  .linkedln.apply-btn {
+    background-color: rgba(10, 102, 194);
+    color: white;
+    border-style: none;
+    padding-left: 18px;
+    padding-right: 18px;
+    
+    transition: background-color 0.24s ease;
+  }
+  
+  .linkedln.apply-btn:hover {
+    background-color: rgb(10, 92, 174);
+  }
+  
+  .linkedln.save-btn {
+    border: 1px solid rgba(10, 102, 194);
+    color: rgba(10, 102, 194);
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: white;
+    
+    transition: background-color 0.24s ease, color 0.24s ease;
+  }
+  
+  .linkedln.save-btn:hover {
+    background-color: rgba(10, 102, 194);
+    color: white;
+  }
+
+
+</style>
+
+<!--2a. Uber-->
+<br>
+<button class="uber-btn">Request now</button>
+<br>
+<!--2b. Amazon-->
+<br>
+<button class="amazon-btn">Add to Cart</button>
+<br>
+<!--2c. Github-->
+<br>
+<button class="github-btn">Sign up</button>
+<br>
+<!--2d. Bootstrap-->
+<br>
+<button class="bootstrap-get-started-btn">Get started</button>
+<button class="bootstrap-dl-btn">Download</button>
+<br>
+<!--2e. Linkedln-->
+<br>
+<button class="linkedln apply-btn">Apply on company website</button>
+<button class="linkedln save-btn">Save</button>
+<br>
