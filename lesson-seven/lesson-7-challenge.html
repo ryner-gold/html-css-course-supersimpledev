@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Challenge 7</title>
+  
+  <style>
+    html, body, .container {
+      min-height: 100vh;
+      margin: 0;
+      padding: 0;
+    }
+    
+    .container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+    
+    .challenge-container {
+      display: flex;
+      flex-direction: column;
+      gap: 12rem;
+      align-items: center;
+    }
+    
+    .form-container {
+      font-family: Arial, Helvetica, sans-serif;
+      display: flex;
+      flex-direction: column;
+      width: 75%;
+      gap: 0.2rem;
+    }
+    
+    .email-field {
+      border: 0.12em solid black;
+      padding-top: 4px;
+      padding-bottom: 4px;
+      border-radius: 5px;
+    }
+    
+    .form-container > p {
+      color: grey;
+      font-size: 14px;
+    }
+    
+    .join-btn {
+      padding: 0.8rem 0;
+      font-size: 14px;
+      border: none;
+      border-radius: 22px;
+      color: white;
+      background-color: #2A61AC;
+    }
+    
+    .twitter-container {
+      display: flex;
+      align-items: center;
+      gap: 1.1rem;
+    }
+    
+    .img-container {
+      height: 75px;
+      width: 75px;
+    }
+    
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 50%;
+    }
+    
+    .twitter-field {
+      border: none;
+      font-size: 21px;
+    }
+    
+    .tweet-btn {
+      font-size: 18px;
+      font-weight: bold;
+      color: white;
+      background-color: #4C97DA;
+      border: none;
+      border-radius: 28px;
+      padding: 12px 24px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="challenge-container">
+      <div class="form-container">
+        <label for="email">Email</label>
+        <input name="email" id="email" class="email-field" type="text">
+        <p>By clicking Agree & Join, you agree to the Privacy Policy.</p>
+        <button class="join-btn" type="submit">Agree & Join</button>
+      </div>
+      <div class="twitter-container">
+        <div class="img-container"><img src="cat.jpg" alt="cat"></div>
+        <input class="twitter-field" type="text" placeholder="What's happening?"/>
+        <button class="tweet-btn">Tweet</button>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

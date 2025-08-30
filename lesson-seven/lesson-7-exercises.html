@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>07 Exercises</title>
+  <style>
+    .container, html, body {
+      height: 100%;
+      margin: 0;
+    }
+    
+    .container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    
+    .exercises-container {
+      display: flex;
+      flex-direction: column;
+      gap: 100px;
+    }
+    
+    .img-container {
+      display: flex;
+      align-items: center;
+    }
+    
+    img {
+      margin: 10px 25px;
+    }
+    
+    .cat {
+      width: 200px;
+    }
+    
+    .cat.rounded {
+      border-radius: 20px;
+    }
+    
+    .cat.square {
+      width: 135px;
+      height: 135px;
+      object-fit: cover;
+    }
+    
+    .cat.circle {
+      width: 155px;
+      height: 155px;
+      object-fit: cover;
+      border-radius: 50%;
+    }
+    
+    
+    .searchbars-container {
+      display: flex;
+      flex-direction: column;
+      gap: 45px;
+    }
+    
+    .plain-searchbar.container {
+    }
+    
+    .searchbar.plain {
+      width: 150px;
+      padding: 10px 8px;
+      font-size: 16px;
+      border-radius: 8px;
+      border: 1px solid rgba(204, 204, 204, 0.9);
+    }
+    
+    .searchbar.plain::placeholder {
+      color: rgb(166, 166, 166);
+    }
+    
+    
+    .google-searchbar.container {
+      display: flex;
+    }
+    
+    .searchbar.google {
+      border: 1px solid rgba(255, 255, 255, 0.3);
+      width: 100%;
+      padding: 10px 12px;
+      border-radius: 50px;
+      box-shadow: 0 0 6px rgba(5, 0, 0, 0.3);
+    }
+    
+    .searchbar.google::placeholder {
+      color: rgb(151, 149, 149);
+    }
+  </style>
+</head>
+<body>
+  
+  <div class="container">
+    <div class="exercises-container">
+      <div class="img-container">
+        <img class="cat rounded" src="cat.jpg" alt="cat"/>
+        <img class="cat square" src="cat.jpg" alt="cat"/>
+        <img class="cat circle" src="cat.jpg" alt="cat"/>
+      </div>
+      <div class="searchbars-container">
+        <div class="plain-searchbar container">
+          <input class="searchbar plain" type="text" placeholder="Search"/>
+        </div>
+        
+        <div class="google-searchbar container">
+          <input class="searchbar google" type="text"
+                 placeholder="Search Google or type a URL"/>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
