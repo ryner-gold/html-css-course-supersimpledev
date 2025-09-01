@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Youtube Clone</title>
+  <style>
+    
+    .searchbar {
+      display: block;
+    }
+    
+    .video-preview {
+      width: 300px;
+      display: inline-block;
+      vertical-align: top;
+      margin-right: 15px;
+    }
+    
+    .thumbnail {
+      width: 300px;
+      display: block;
+    }
+    
+    .video-title {
+      width: 300px;
+    }
+    
+    .video-author,
+    .video-stats {
+      display: inline-block;
+    }
+    
+    .video-author {
+      display: block;
+    }
+  </style>
+</head>
+<body>
+  <label for="yt-searchbar">
+    <input name="yt-searchbar" id="yt-searchbar"
+           class="searchbar" type="text"
+           placeholder="Search"/>
+  </label>
+  <div class="video-preview">
+    <img class="thumbnail" src="thumbnails/thumbnail-1.webp" alt="Thumbnail 1">
+    
+    
+    <p class="video-title">Talking Tech and AI with Google CEO Sundar Pichai!</p>
+    <p class="video-author">Marques Brownlee</p>
+    <p class="video-stats">3.4M views &#183; 6 months ago</p>
+  </div>
+  <div class="video-preview">
+    <img class="thumbnail" src="thumbnails/thumbnail-2.webp" alt="Thumbnail 2">
+    <p class="video-title">Try Not To Laugh Challenge #9</p>
+    <p class="video-author">Markiplier</p>
+    <p class="video-stats">19M views &#183; 4 years ago</p>
+  </div>
+</body>
+</html>
