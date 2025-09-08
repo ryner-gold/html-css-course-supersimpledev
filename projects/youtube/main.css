@@ -256,6 +256,9 @@ header > .left {
 main {
     grid-area: main;
     overflow-y: auto; /* Enables scrolling */
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
 }
 
 .categories {
@@ -292,6 +295,94 @@ main {
     color: black;
 }
 
+.videos-grid {
+    display: flex;
+    flex-wrap: wrap;
+}
 
+.video-item {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    max-width: 461px;
+    margin: 0 24px 32px 8px;
+}
+
+
+.thumbnail-container {
+    position: relative;
+    display: grid;
+    grid-template-areas: "thumbnail";
+    place-items: end;
+}
+
+.thumbnail {
+    grid-area: thumbnail;
+}
+
+.thumbnail > img {
+    border-radius: 10px;
+    width: 100%;
+}
+
+.duration {
+    grid-area: thumbnail;
+    background: rgba(44, 44, 44, 0.89);
+    border-radius: 2px;
+    z-index: 98;
+    margin: 0 8px 8px 0;
+    padding: 0 2px;
+    font-size: 12px;
+    font-weight: bold;
+
+}
+
+.video-details-container {
+    display: flex;
+    gap: 0.6em;
+}
+
+.video-details {
+    display: flex;
+    flex-direction: column;
+    flex: 1 auto;
+    font-size: 12px;
+}
+
+.video-details > div > span {
+    color: rgb(168, 168, 168);
+}
+
+.video-title {
+    display: flex;
+    justify-content: space-between;
+}
+
+.video-title > .title {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+
+.video-author-avatar {
+    flex: 0 0 36px;
+}
+
+.video-author-avatar > img {
+    border-radius: 50%;
+}
+
+.video-title > .menu > svg {
+    transform: rotate(90deg);
+}
+
+.video-author {
+    display: flex;
+}
+
+.author-status {
+    opacity: 0.6;
+    transform: scaleY(0.55) scaleX(0.55);
+}
 
 
