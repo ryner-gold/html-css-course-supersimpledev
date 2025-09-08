@@ -396,13 +396,13 @@ main {
 
 @media (min-width: 889px) and (max-width: 1143px) {
     .video-item {
-        flex: 0 0 calc(33.333% - 8px); /* Force 3 columns */
+        flex: 0 0 calc(35.333% - 8px); /* Force 3 columns */
     }
 }
 
 @media (min-width: 1144px) {
     .video-item {
-        flex: 0 0 calc(25% - 9px);
+        flex: 0 0 calc(33% - 9px);
     }
 }
 
